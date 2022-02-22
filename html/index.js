@@ -5,8 +5,6 @@ function createNotification(arg) {
     return
   }
 
-  console.log(JSON.stringify(arg))
-
   if(arg.style) {
     style = arg.style
   }

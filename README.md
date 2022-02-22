@@ -148,6 +148,8 @@ props = {
   exports.rr_notify:notify(props)
 ```
 
+If you have any further questions please join my <a href="https://discord.gg/RsWzxwtAY3">Discord</a>. So that I can help you
+
 ## Legal
 
 # License

@@ -3,6 +3,11 @@
 
 # rr_notify | Simple notifications
 
+### Important
+
+**DISCONTINUED** This resource is considered to be discontinued. Everything works fine and is perfectly useable. But this resource will not be updated anymore since it has been replaced by:
+[RR UILib](https://github.com/RoleplayRevisited/rr_uilib)
+
 ## Notification Types
 
 **text**  
@@ -21,26 +26,31 @@
 ![error](images/notify_error.png)
 
 ## Usage
+
 There are two ways to trigger a notification. Either by triggering a client event. or using exports
 As you can see in the event and export you need to add an argument. This argument is an object containing all the data
 See below how to use it
 
 **Client Event**
+
 ```lua
 TriggerClientEvent("rr_notify:notifyC", source, props)
 ```
+
 **Exports**
+
 ```lua
 exports.rr_notify:notify(props)
 ```
 
-## Props  
+## Props
 
 </br>
 
-**Message**   
+**Message**
+
 ```lua
-Required = true 
+Required = true
 Default = nil
 
 -- Example
@@ -49,9 +59,10 @@ props = {
 }
 ```
 
-**Style**   
+**Style**
+
 ```lua
-Required = false 
+Required = false
 Default = "text"
 
 Options = {
@@ -64,9 +75,10 @@ props = {
 }
 ```
 
-**Title**   
+**Title**
+
 ```lua
-Required = false 
+Required = false
 Default = props.style -- Uses the name of the tyle of the message. So for error style the title would be error
 
 -- Example
@@ -75,9 +87,10 @@ props = {
 }
 ```
 
-**Duration**   
+**Duration**
+
 ```lua
-Required = false 
+Required = false
 Default = 5000 -- 5 seconds | Time in MS
 
 -- Example
@@ -86,9 +99,10 @@ props = {
 }
 ```
 
-**Position**   
+**Position**
+
 ```lua
-Required = false 
+Required = false
 Default = "tr" -- Top Right
 
 Options = {
@@ -109,9 +123,10 @@ props = {
 }
 ```
 
-**Progress**   
+**Progress**
+
 ```lua
-Required = false 
+Required = false
 Default = true -- Shows a progress bar
 
 -- Example
@@ -119,10 +134,12 @@ props = {
   progress = false
 }
 ```
-**Animate**   
+
+**Animate**
+
 ```lua
-Required = false 
-Default = "fade" 
+Required = false
+Default = "fade"
 
 Options = {
   "fade", "slide"
@@ -135,12 +152,13 @@ props = {
 ```
 
 ## Example Usage
+
 ```lua
   local props = {
     msg = "This is a test message",
     title = "This is a test title",
     duration = 6000,
-    progress = false, 
+    progress = false,
     animate = "slide",
     position = "mm",
   }
@@ -153,6 +171,7 @@ If you have any further questions please join my <a href="https://discord.gg/RsW
 ## Legal
 
 # License
+
 MIT License
 rr_notify
 Copyright (c) 2022 RoleplayRevisited
